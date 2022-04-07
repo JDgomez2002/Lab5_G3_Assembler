@@ -1,3 +1,4 @@
+
 /* -----------------------------------------------
 * UNIVERSIDAD DEL VALLE DE GUATEMALA 
 * Org de computadoras y Assembler
@@ -47,13 +48,13 @@ loops:
 	@@ calculos
 	ldr r2,=a
 	ldr r0,[r2]		/* direccion y valor de a en R0*/
-	cmp r0,#1
+	cmp r0,#61
 	blt Wrong		/*en caso de ingesar un valor infrior al rango de 1-3 indicar que no es valido-*/
-	addeq r9,#1		/* aumentar conteo de camisas pequenas*/
-	cmp r0,#2		/* direccion y valor de b en R1*/
-	addeq r8,#1	/* aumentar conteo talla M*/
-	cmp r0,#3		/* direccion y valor de b en R1*/
-	addeq r7,#1	/* aumentar conteo talla G */
+	addlt r9,#1		/* aumentar conteo de camisas pequenas*/
+	cmp r0,#85		/* direccion y valor de b en R1*/
+	addlt r8,#1	/* aumentar conteo talla M*/
+	cmp r0,#86		/* direccion y valor de b en R1*/
+	addge r7,#1	/* aumentar conteo talla G */
 	cmp r0,#4	/* direccion y valor de b en*/
 	bge Wrong /*en caso de ingesar un valor superior al rango de 1-3 indicar que no es valido-*/
 	b loops
