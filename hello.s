@@ -5,7 +5,7 @@
 * Ciclo 1 - 2022
 * Gonzalo Santizo
 * Jose Daniel Gomez
-* Melanie ... pls agrega tu apellido :v
+* Melanie Maldonado
  ----------------------------------------------- */
 
 
